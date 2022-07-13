@@ -339,7 +339,9 @@ void MainWindow::saveAll() {
 
 void MainWindow::setWindowProjectFromFunc(QString const& fName) {
 
-	//TODO: look if it is possible to open a new main windows.
+	/**
+	 * @todo look if it is possible to open a new main windows
+	 */
 	EditableItemManager* manager = _editableItemManagerFactory->createManagerWithRegistredFunctionAndGuiContext(fName, this, this);
 
 	if (manager != nullptr) {
